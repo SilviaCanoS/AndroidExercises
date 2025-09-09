@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="search">Search</string>
+    <string name="pikachu">Pikachu</string>
+    <string name="pokemon_image">Pokemon image</string>
+    <string name="close">x</string>
+    <string name="previous">10 previous</string>
+    <string name="next">next 10</string>
+</resources>

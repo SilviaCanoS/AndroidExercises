@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Actividad1</string>
+    <string name="lbl_activity2">Hola</string>
+    <string name="todo">TODO</string>
+</resources>

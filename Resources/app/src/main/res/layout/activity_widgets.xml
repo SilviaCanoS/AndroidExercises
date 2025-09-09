@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".Widgets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/favorite_character" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/cbDiane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/diane" />
+
+            <CheckBox
+                android:id="@+id/cbBeth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/beth" />
+
+            <CheckBox
+                android:id="@+id/cbSummer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/summer" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@color/darkest_green" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/favorite_place" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbEarth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/earth_planet" />
+
+            <RadioButton
+                android:id="@+id/rbPurge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/purge_planet" />
+
+            <RadioButton
+                android:id="@+id/rbBird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/bird_world" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@color/darkest_green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-9dp"
+                android:layout_marginHorizontal="5dp"
+                android:text="@string/favorite_invention" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@color/darkest_green" />
+
+        <Button
+            android:id="@+id/btnResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            android:text="@string/click_for_results" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="30dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-20dp"
+            android:background="@color/darkest_green" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:rowCount="2"
+            android:columnCount="3" >
+
+            <Button
+                android:id="@+id/btPlay"
+                android:text="@string/play"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@null"
+                android:layout_margin="5dp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btStop"
+                android:text="@string/stop"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@null"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/btFragment1"
+                android:text="@string/a_fragment"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@null"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textColor="@color/purple" />
+
+            <Button
+                android:id="@+id/btFragment2"
+                android:text="@string/another_fragment"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@null"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textColor="@color/pink" />
+
+            <Button
+                android:id="@+id/btViewerPager"
+                android:layout_margin="5dp"
+                android:text="@string/view_pager"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@null"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textColor="@color/dark_green" />
+
+            <Button
+                android:id="@+id/btViewModel"
+                android:text="@string/view_model"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_button"
+                app:backgroundTint="@null"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:textColor="@color/another_blue" />
+
+        </GridLayout>
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</ScrollView>

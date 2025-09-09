@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green_portal">#7CFC00</color>
+    <color name="dark_green">#467829</color>
+    <color name="blue">#86C3D5</color>
+    <color name="darkest_green">#0D3502</color>
+    <color name="pink">#F630EB</color>
+    <color name="another_blue">#0F65D7</color>
+    <color name="red">#FF0000</color>
+    <color name="purple">#9C27B0</color>
+</resources>
